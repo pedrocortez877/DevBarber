@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigation } from '@react-navigation/native';
-import { RefreshControl } from 'react-native';
+import { RefreshControl, StatusBar } from 'react-native';
 
 import * as Location from 'expo-location';
 
@@ -92,6 +92,7 @@ export default () => {
 
   return (
     <Container>
+      <StatusBar backgroundColor="#63c2d1"/>
       <Scroller refreshControl={<RefreshControl refreshing={refreshing} onRefresh={onRefresh}/>}>
 
         <HeaderArea>

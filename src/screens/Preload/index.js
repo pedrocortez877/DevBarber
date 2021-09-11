@@ -1,5 +1,5 @@
 import React, { useEffect, useContext } from 'react';
-
+import { StatusBar } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import AsyncStorage from '@react-native-community/async-storage';
 
@@ -45,6 +45,7 @@ export default () => {
 
   return (
     <Container>
+      <StatusBar backgroundColor="#63c2d1"/>
       <BarberLogo width="100%" height="160px"/>
       <LoadingIcon size="large" color="#FFFFFF"/>
     </Container>

@@ -1,6 +1,7 @@
 import React, { useState, useContext } from 'react';
 import AsyncStorage from '@react-native-community/async-storage';
 
+import { StatusBar } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 
 import { 
@@ -62,6 +63,7 @@ export default () => {
 
   return (
     <Container>
+      <StatusBar backgroundColor="#63c2d1"/>
       <BarberLogo width="100%" height="160px"/>
 
       <InputArea>
